@@ -1,0 +1,227 @@
+   
+/* Mobile Sidebar Menu */
+.mobile-sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+    transition: right 0.4s ease;
+    z-index: 10001;
+    overflow-y: auto;
+}
+
+.mobile-sidebar.active {
+    right: 0;
+}
+
+.sidebar-header {
+    padding: 20px;
+    background: linear-gradient(90deg, #ffd89b 0%, #ffb347 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+.sidebar-header img {
+    height: 40px;
+}
+
+.close-btn {
+    font-size: 35px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+    line-height: 1;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.close-btn:hover {
+    transform: rotate(90deg);
+}
+
+.mobile-nav {
+    padding: 20px 0;
+}
+
+.mobile-nav-item {
+    margin-bottom: 5px;
+}
+
+.mobile-nav-item > a,
+.mobile-nav-item .has-submenu-mb {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px 25px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.mobile-nav-item > a:hover,
+.mobile-nav-item .has-submenu-mb:hover {
+    background-color: #f8f8f8;
+    color: #ff6b6b;
+}
+
+.submenu-mb {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background-color: #f9f9f9;
+}
+
+.submenu-mb.active {
+    max-height: 800px;
+}
+
+.submenu-mb a {
+    display: block;
+    color: #666;
+    text-decoration: none;
+    padding: 12px 25px 12px 45px;
+    font-size: 14px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.submenu-mb a:hover {
+    color: #ff6b6b;
+    background-color: #f0f0f0;
+}
+
+.has-submenu-mb {
+    position: relative;
+}
+
+.has-submenu-mb::after {
+    content: '▼';
+    position: absolute;
+    right: 25px;
+    font-size: 11px;
+    transition: transform 0.3s;
+    color: #999;
+}
+
+.has-submenu-mb.active::after {
+    transform: rotate(180deg);
+    color: #ff6b6b;
+}
+
+.mobile-contact {
+    padding: 20px 25px;
+    border-top: 2px solid #f0f0f0;
+    margin-top: 20px;
+}
+
+.mobile-contact .phone {
+    display: block;
+    margin-bottom: 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.mobile-contact .phone:hover {
+    color: #ff6b6b;
+}
+
+.mobile-contact .get-in-touch {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: #6b46c1;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.mobile-contact .get-in-touch:hover {
+    background-color: #553c9a;
+}
+
+/* Overlay */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 10000;
+}
+
+.sidebar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hamburger Animation */
+.header__hamburger .sidebar__toggle .header-bar span {
+    transition: all 0.3s ease;
+}
+
+.header__hamburger .sidebar__toggle.active .header-bar span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.header__hamburger .sidebar__toggle.active .header-bar span:nth-child(2) {
+    opacity: 0;
+}
+
+.header__hamburger .sidebar__toggle.active .header-bar span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .mobile-sidebar {
+        width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-sidebar {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Hide desktop menu on mobile */
+@media (max-width: 1199px) {
+    .mean__menu-wrapper .main-menu {
+        display: none;
+    }
+}
+
+/* Mobile + Tablet + Mini Laptop */
+@media (max-width: 1199px) {
+    .responsive-contents {
+        display: contents;
+    }
+}
+
+@media (max-width: 1024px) {
+    .responsive-contents {
+        display: contents;
+    }
+}

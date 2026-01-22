@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>Trishul Trades</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="assets/images/trishul-fav.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="assets/css/font-awesome-all.css" rel="stylesheet">
+    <link href="assets/css/flaticon.css" rel="stylesheet">
+    <link href="assets/css/owl.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/nice-select.css" rel="stylesheet">
+    <link href="assets/css/elpath.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.css" rel="stylesheet">
+    <link href="assets/css/color.css" id="jssDefault" rel="stylesheet">
+    <link href="assets/css/rtl.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/module-css/header.css" rel="stylesheet">
+    <link href="assets/css/module-css/shop-sidebar.css" rel="stylesheet">
+    <link href="assets/css/module-css/shop-page.css" rel="stylesheet">
+    <link href="assets/css/module-css/popular-product.css" rel="stylesheet">
+    <link href="assets/css/module-css/cta.css" rel="stylesheet">
+    <link href="assets/css/module-css/subscribe.css" rel="stylesheet">
+    <link href="assets/css/module-css/footer.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assetss/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assetss/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assetss/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assetss/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assetss/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assetss/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assetss/css/nice-select.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assetss/css/main.css">
+
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/module-css/banner-resp.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        .product-card {
+            animation: fadeInUp 0.5s ease-out both;
+        }
+
+        .product-card:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .product-card:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .product-card:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .product-card:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+
+        .product-card:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+
+        .product-card:nth-child(6) {
+            animation-delay: 0.5s;
+        }
+
+        .product-card:nth-child(7) {
+            animation-delay: 0.6s;
+        }
+
+        .product-card:nth-child(8) {
+            animation-delay: 0.7s;
+        }
+
+        .product-img {
+            transition: transform 0.7s ease;
+        }
+
+        .product-card:hover .product-img {
+            transform: scale(1.1);
+        }
+
+        .overlay-actions {
+            transition: all 0.3s ease;
+        }
+
+        .product-card:hover .overlay-actions {
+            opacity: 1;
+        }
+
+        .action-btn {
+            transition: all 0.3s ease;
+            transform: translateY(20px);
+        }
+
+        .product-card:hover .action-btn {
+            transform: translateY(0);
+        }
+
+        .action-btn:nth-child(2) {
+            transition-delay: 0.075s;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
+        }
+
+        .badge-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+
+
+
+</head>
+
+
+<!-- page wrapper -->
+
+<body>
+
+    <div class="boxed_wrapper ltr">
+
+
+
+        <!-- page-direction -->
+        <div class="page_direction">
+            <div class="demo-rtl direction_switch"><button class="rtl">RTL</button></div>
+            <div class="demo-ltr direction_switch"><button class="ltr">LTR</button></div>
+        </div>
+        <!-- page-direction end -->
+
+
+        <!--cart popup-->
+        <div id="cart-popup" class="cart-popup">
+            <div class="popup-inner">
+                <div class="close-cart"><i class="fal fa-times"></i></div>
+                <div class="cart-inner">
+                    <h4 class="title-text"><span>3</span>Cart Items</h4>
+                    <div class="single-cart-box">
+                        <figure class="image-box"><img src="assets/images/resource/cart-1.png" alt=""></figure>
+                        <h5><a href="index.html">Avenger Action Figure figurine Thano</a></h5>
+                        <h4>$02.99 <span>x 1</span></h4>
+                        <button type="button"><i class="fal fa-times"></i></button>
+                    </div>
+                    <div class="single-cart-box">
+                        <figure class="image-box"><img src="assets/images/resource/cart-2.png" alt=""></figure>
+                        <h5><a href="index.html">Cart- Limited 100 Anniversary</a></h5>
+                        <h4>$01.99 <span>x 1</span></h4>
+                        <button type="button"><i class="fal fa-times"></i></button>
+                    </div>
+                    <div class="single-cart-box">
+                        <figure class="image-box"><img src="assets/images/resource/cart-3.png" alt=""></figure>
+                        <h5><a href="index.html">Ultrasoft Stuff Animal Plush Bunny</a></h5>
+                        <h4>$02.99 <span>x 1</span></h4>
+                        <button type="button"><i class="fal fa-times"></i></button>
+                    </div>
+                    <div class="text-box">
+                        <h5>Subtotal</h5>
+                        <span>$07.97</span>
+                    </div>
+                    <div class="btn-box">
+                        <a href="cart.html" class="theme-btn btn-one">View Cart</a>
+                        <a href="checkout.html" class="theme-btn btn-one">Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Header Section Start -->
+        <header id="header-sticky" class="header-1">
+            <div class="mega-menu-wrapper">
+                <div class="header-main">
+                    <div class="header-left">
+                        <a href="index.html" class="header-logo">
+                            <img src="assets/images/trishul logo.png" alt="img">
+                        </a>
+
+                        <div class="mean__menu-wrapper">
+                            <div class="main-menu">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="index.html">
+                                                Home
+                                                <i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+
+                                                <li><a href="about.html">About</a></li>
+                                                <li><a href="contact.html">Contact</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="has-dropdown active d-xl-none">
+                                            <a href="javascript:void(0)" class="border-none">
+                                                Home
+                                            </a>
+                                            <ul class="submenu">
+                                                <li><a href="about.html">About</a></li>
+                                                <li><a href="contact.html">Contact</a></li>
+
+
+                                            </ul>
+                                        </li>
+                                        <li class="has-dropdown">
+                                            <a href="javascript:void(0)">
+                                                Shop
+                                                <i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+
+                                                <li><a href="combo-pack.html">Combo Pack</a></li>
+                                                <li><a href="Uniform-Set.html">Uniform Set</a></li>
+                                                
+                                                <li><a href="hoodies.html">Hoodies</a></li>
+                                                <li><a href="lab-coats.html">Lab Coats</a></li>
+
+                                                <li><a href="co-operate.html"> Workwear</a></li>
+
+
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                Accessories
+                                                <i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+
+                                                <li><a href="toys.html">Toys</a></li>
+                                                <li><a href="note.html">Note & Books</a></li>
+
+                                                <li><a href="montess.html">Montessori</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                Printing
+                                                <i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li><a href="dtf-print.html">DTF Printing</a></li>
+                                                <li><a href="uv-printing.html">UV Printing</a></li>
+                                                <li><a href="id_ card-print.html">ID Card Printing</a></li>
+                                                <li><a href="woven-print.html">Woven Labels</a></li>
+                                                <li><a href="embroid.html">Embroiding</a></li>
+                                                <li><a href="sticker-print.html">Sticker Printing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                Bags & Caps
+                                                <i class="fas fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li><a href="bags.html">Bags</a></li>
+                                                <li><a href="jute-bags.html">Jute Bags</a></li>
+                                                <li><a href="laptop-bags.html">Laptop Bags</a></li>
+                                                <li><a href="tote-bags.html">Tote Bags</a></li>
+                                                <li><a href="caps.html">Caps</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li>
+                                            <a href="javascript:void(0)">
+                                                New Arrivals
+                                                <!-- <i class="fas fa-chevron-down"></i> -->
+                                            </a>
+                                            <!-- <ul class="submenu">
+                                             <li><a href="custome-design.html">Custom Design</a></li>
+                                    <li><a href="bulk-order.html">Bulk Orders</a></li>
+                                    <li><a href="consultation.html">Consultation</a></li>
+                                        </ul> -->
+                                        </li>
+
+                                        <li>
+                                            <a href="blogs.html">
+                                                Blogs
+                                                <!-- <i class="fas fa-chevron-down"></i> -->
+                                            </a>
+
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="responsive-contents">
+                        <div class="support-box">
+                            <div class="icon-box"><i class="icon-2"></i></div>
+                            <div class="inner">
+                              <h3 class="phone-text">
+                                    <a href="tel:+919962552023">+91 9962552023</a>
+                                </h3>
+
+                            </div>
+                        </div>
+                        <a href="contact.html" class="theme-btn d-none d-xl-block">
+                            Get In Touch
+                            <i class="fa-solid fa-arrow-up-right"></i>
+                        </a>
+                        <div class="header__hamburger my-auto d-xl-none">
+                            <div class="sidebar__toggle">
+                                <div class="header-bar">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Overlay -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <!-- Mobile Sidebar -->
+        <div class="mobile-sidebar" id="mobileSidebar">
+            <div class="sidebar-header">
+                <a href="index.html"> <img src="assets/images/trishul logo.png" alt="Trishul Trades"></a>
+                <button class="close-btn" id="closeSidebarBtn">&times;</button>
+            </div>
+
+            <nav class="mobile-nav">
+                <div class="mobile-nav-item">
+                    <div class="has-submenu-mb" data-submenu="home">Home</div>
+                    <div class="submenu-mb" id="submenu-mb-home">
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+
+                    </div>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <div class="has-submenu-mb" data-submenu="shop">Shop</div>
+                    <div class="submenu-mb" id="submenu-mb-shop">
+                        <a href="combo-pack.html">Combo Pack</a>
+                        <a href="uniform-set.html">Uniform Set</a>
+                        
+                        <a href="hoodies.html">Hoodies</a>
+                        <a href="lab-coats.html">Lab Coats</a>
+
+                       
+                        <a href="co-operate.html">Workwear</a>
+
+                    </div>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <div class="has-submenu-mb" data-submenu="accessories">Accessories</div>
+                    <div class="submenu-mb" id="submenu-mb-accessories">
+                        <a href="toys.html">Toys</a>
+                        <a href="note.html">Note</a>
+                        <a href="books.html">Books</a>
+                        <a href="montess.html">Montessori</a>
+                    </div>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <div class="has-submenu-mb" data-submenu="printing">Printing</div>
+                    <div class="submenu-mb" id="submenu-mb-printing">
+                        <li><a href="dtf-print.html">DTF Printing</a></li>
+                        <li><a href="uv-printing.html">UV Printing</a></li>
+                        <li><a href="id_ card-print.html">ID Card Printing</a></li>
+                        <li><a href="woven-print.html">Woven Labels</a></li>
+                        <li><a href="embroid.html">Embroiding</a></li>
+                        <li><a href="sticker-print.html">Sticker Printing</a></li>
+                    </div>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <div class="has-submenu-mb" data-submenu="bags">Bags & Caps</div>
+                    <div class="submenu-mb" id="submenu-mb-bags">
+                        <a href="bags.html">Bags</a>
+                        <a href="jute-bags.html">Jute Bags</a>
+                        <a href="laptop-bags.html">Laptop Bags</a>
+                        <a href="tote-bags.html">Tote Bags</a>
+                        <a href="caps.html">Caps</a>
+                    </div>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <a href="javascript:void(0)">New Arrivals</a>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <a href="blogs.html">Blogs</a>
+                </div>
+            </nav>
+
+            <div class="mobile-contact">
+                <a href="tel:+919962552023" class="phone">📞 +91 9962552023</a>
+                <a href="contact.html" class="get-in-touch">Get In Touch <i class="fa-solid fa-arrow-up-right"></i></a>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- category menu  -->
+        <div class="category-menu">
+            <div class="menu-backdrop"></div>
+            <div class="outer-box">
+                <div class="side-content">
+                    <div class="close-btn"><i class="far fa-times"></i></div>
+                    <ul class="option-list">
+                        <li><button type="button"><i class="far fa-heart"></i></button></li>
+                        <li class="shop-cart cart-toggler"><button type="button"><i
+                                    class="far fa-shopping-bag"></i></button></li>
+                        <li><a href="login.html"><i class="far fa-user"></i></a></li>
+                    </ul>
+                    <ul class="social-links">
+                        <li><a href="index-3.html"><i class="icon-14"></i></a></li>
+                        <li><a href="index-3.html"><i class="icon-15"></i></a></li>
+                        <li><a href="index-3.html"><i class="icon-16"></i></a></li>
+                        <li><a href="index-3.html"><i class="icon-17"></i></a></li>
+                    </ul>
+                </div>
+                <div class="category-box">
+                    <div class="search-form">
+                        <form action="shop.html" method="get">
+                            <div class="form-group">
+                                <input type="search" name="search-field" placeholder="Search Product" required>
+                                <button type="submit"><i class="icon-4"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="category-list product-category clearfix">
+                        <li class="category-dropdown"><a href="#">Animal Toys</a>
+                            <div class="image"><img src="assets/images/icons/category-1.png" alt=""></div>
+                            <ul>
+                                <li><a href="index.html">Bowling</a></li>
+                                <li><a href="index.html">Hopscotch</a></li>
+                                <li><a href="index.html">Balance Beam</a></li>
+                                <li><a href="index.html">Build a Fort</a></li>
+                                <li><a href="index.html">Video Gamens</a></li>
+                                <li><a href="index.html">Musical Chair</a></li>
+                                <li><a href="index.html">Hot Potato</a></li>
+                                <li><a href="index.html">Simon Says</a></li>
+                                <li><a href="index.html">Treasure Hunt</a></li>
+                                <li><a href="index.html">Charades</a></li>
+                            </ul>
+                        </li>
+                        <li class="category-dropdown"><a href="#">Indoor Games</a>
+                            <div class="image"><img src="assets/images/icons/category-2.png" alt=""></div>
+                            <ul>
+                                <li><a href="index.html">Bowling</a></li>
+                                <li><a href="index.html">Hopscotch</a></li>
+                                <li><a href="index.html">Balance Beam</a></li>
+                                <li><a href="index.html">Build a Fort</a></li>
+                                <li><a href="index.html">Video Gamens</a></li>
+                                <li><a href="index.html">Musical Chair</a></li>
+                                <li><a href="index.html">Hot Potato</a></li>
+                                <li><a href="index.html">Simon Says</a></li>
+                                <li><a href="index.html">Treasure Hunt</a></li>
+                                <li><a href="index.html">Charades</a></li>
+                            </ul>
+                        </li>
+                        <li class="category-dropdown"><a href="#">Music Instrument</a>
+                            <div class="image"><img src="assets/images/icons/category-3.png" alt=""></div>
+                            <ul>
+                                <li><a href="index.html">Bowling</a></li>
+                                <li><a href="index.html">Hopscotch</a></li>
+                                <li><a href="index.html">Balance Beam</a></li>
+                                <li><a href="index.html">Build a Fort</a></li>
+                                <li><a href="index.html">Video Gamens</a></li>
+                                <li><a href="index.html">Musical Chair</a></li>
+                                <li><a href="index.html">Hot Potato</a></li>
+                                <li><a href="index.html">Simon Says</a></li>
+                                <li><a href="index.html">Treasure Hunt</a></li>
+                                <li><a href="index.html">Charades</a></li>
+                            </ul>
+                        </li>
+                        <li class="category-dropdown"><a href="#">Kids Dolls</a>
+                            <div class="image"><img src="assets/images/icons/category-4.png" alt=""></div>
+                            <ul>
+                                <li><a href="index.html">Bowling</a></li>
+                                <li><a href="index.html">Hopscotch</a></li>
+                                <li><a href="index.html">Balance Beam</a></li>
+                                <li><a href="index.html">Build a Fort</a></li>
+                                <li><a href="index.html">Video Gamens</a></li>
+                                <li><a href="index.html">Musical Chair</a></li>
+                                <li><a href="index.html">Hot Potato</a></li>
+                                <li><a href="index.html">Simon Says</a></li>
+                                <li><a href="index.html">Treasure Hunt</a></li>
+                                <li><a href="index.html">Charades</a></li>
+                            </ul>
+                        </li>
+                        <li class="category-dropdown"><a href="#">Baby Toys</a>
+                            <div class="image"><img src="assets/images/icons/category-5.png" alt=""></div>
+                            <ul>
+                                <li><a href="index.html">Bowling</a></li>
+                                <li><a href="index.html">Hopscotch</a></li>
+                                <li><a href="index.html">Balance Beam</a></li>
+                                <li><a href="index.html">Build a Fort</a></li>
+                                <li><a href="index.html">Video Gamens</a></li>
+                                <li><a href="index.html">Musical Chair</a></li>
+                                <li><a href="index.html">Hot Potato</a></li>
+                                <li><a href="index.html">Simon Says</a></li>
+                                <li><a href="index.html">Treasure Hunt</a></li>
+                                <li><a href="index.html">Charades</a></li>
+                            </ul>
+                        </li>
+                        <li class="category-dropdown"><a href="#">Vehicle Toys</a>
+                            <div class="image"><img src="assets/images/icons/category-6.png" alt=""></div>
+                            <ul>
+                                <li><a href="index.html">Bowling</a></li>
+                                <li><a href="index.html">Hopscotch</a></li>
+                                <li><a href="index.html">Balance Beam</a></li>
+                                <li><a href="index.html">Build a Fort</a></li>
+                                <li><a href="index.html">Video Gamens</a></li>
+                                <li><a href="index.html">Musical Chair</a></li>
+                                <li><a href="index.html">Hot Potato</a></li>
+                                <li><a href="index.html">Simon Says</a></li>
+                                <li><a href="index.html">Treasure Hunt</a></li>
+                                <li><a href="index.html">Charades</a></li>
+                            </ul>
+                        </li>
+                        <li class="category-dropdown"><a href="#">Color Plates</a>
+                            <div class="image"><img src="assets/images/icons/category-7.png" alt=""></div>
+                            <ul>
+                                <li><a href="index.html">Bowling</a></li>
+                                <li><a href="index.html">Hopscotch</a></li>
+                                <li><a href="index.html">Balance Beam</a></li>
+                                <li><a href="index.html">Build a Fort</a></li>
+                                <li><a href="index.html">Video Gamens</a></li>
+                                <li><a href="index.html">Musical Chair</a></li>
+                                <li><a href="index.html">Hot Potato</a></li>
+                                <li><a href="index.html">Simon Says</a></li>
+                                <li><a href="index.html">Treasure Hunt</a></li>
+                                <li><a href="index.html">Charades</a></li>
+                            </ul>
+                        </li>
+                        <li class="category-dropdown"><a href="#">Cloth Accessories</a>
+                            <div class="image"><img src="assets/images/icons/category-8.png" alt=""></div>
+                            <ul>
+                                <li><a href="index.html">Bowling</a></li>
+                                <li><a href="index.html">Hopscotch</a></li>
+                                <li><a href="index.html">Balance Beam</a></li>
+                                <li><a href="index.html">Build a Fort</a></li>
+                                <li><a href="index.html">Video Gamens</a></li>
+                                <li><a href="index.html">Musical Chair</a></li>
+                                <li><a href="index.html">Hot Potato</a></li>
+                                <li><a href="index.html">Simon Says</a></li>
+                                <li><a href="index.html">Treasure Hunt</a></li>
+                                <li><a href="index.html">Charades</a></li>
+                            </ul>
+                        </li>
+                        <li class="category-dropdown"><a href="#">Water Games</a>
+                            <div class="image"><img src="assets/images/icons/category-9.png" alt=""></div>
+                            <ul>
+                                <li><a href="index.html">Bowling</a></li>
+                                <li><a href="index.html">Hopscotch</a></li>
+                                <li><a href="index.html">Balance Beam</a></li>
+                                <li><a href="index.html">Build a Fort</a></li>
+                                <li><a href="index.html">Video Gamens</a></li>
+                                <li><a href="index.html">Musical Chair</a></li>
+                                <li><a href="index.html">Hot Potato</a></li>
+                                <li><a href="index.html">Simon Says</a></li>
+                                <li><a href="index.html">Treasure Hunt</a></li>
+                                <li><a href="index.html">Charades</a></li>
+                            </ul>
+                        </li>
+                        <li class="category-dropdown"><a href="#">Paper Toys</a>
+                            <div class="image"><img src="assets/images/icons/category-10.png" alt=""></div>
+                            <ul>
+                                <li><a href="index.html">Bowling</a></li>
+                                <li><a href="index.html">Hopscotch</a></li>
+                                <li><a href="index.html">Balance Beam</a></li>
+                                <li><a href="index.html">Build a Fort</a></li>
+                                <li><a href="index.html">Video Gamens</a></li>
+                                <li><a href="index.html">Musical Chair</a></li>
+                                <li><a href="index.html">Hot Potato</a></li>
+                                <li><a href="index.html">Simon Says</a></li>
+                                <li><a href="index.html">Treasure Hunt</a></li>
+                                <li><a href="index.html">Charades</a></li>
+                            </ul>
+                        </li>
+                        <li class="category-dropdown"><a href="#">Video Games</a>
+                            <div class="image"><img src="assets/images/icons/category-11.png" alt=""></div>
+                            <ul>
+                                <li><a href="index.html">Bowling</a></li>
+                                <li><a href="index.html">Hopscotch</a></li>
+                                <li><a href="index.html">Balance Beam</a></li>
+                                <li><a href="index.html">Build a Fort</a></li>
+                                <li><a href="index.html">Video Gamens</a></li>
+                                <li><a href="index.html">Musical Chair</a></li>
+                                <li><a href="index.html">Hot Potato</a></li>
+                                <li><a href="index.html">Simon Says</a></li>
+                                <li><a href="index.html">Treasure Hunt</a></li>
+                                <li><a href="index.html">Charades</a></li>
+                            </ul>
+                        </li>
+                        <li class="category-dropdown"><a href="#">Outdoor Games</a>
+                            <div class="image"><img src="assets/images/icons/category-12.png" alt=""></div>
+                            <ul>
+                                <li><a href="index.html">Bowling</a></li>
+                                <li><a href="index.html">Hopscotch</a></li>
+                                <li><a href="index.html">Balance Beam</a></li>
+                                <li><a href="index.html">Build a Fort</a></li>
+                                <li><a href="index.html">Video Gamens</a></li>
+                                <li><a href="index.html">Musical Chair</a></li>
+                                <li><a href="index.html">Hot Potato</a></li>
+                                <li><a href="index.html">Simon Says</a></li>
+                                <li><a href="index.html">Treasure Hunt</a></li>
+                                <li><a href="index.html">Charades</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- category menu end -->
+
+
+        <!-- shop-page-section -->
+        <div class="max-w-7xl mx-auto px-4 py-8 mt-[120px] md:mt-[120px] sm:mt-[120px]">
+            <!-- Header Section -->
+            <div class="mb-8 animate-fade-in">
+                <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+                    <h1
+                        class="text-4xl md:text-5xl font-bold text-gray-800 mb-2 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent font-['Poppins']">
+                        Workwear Collection
+                    </h1>
+                    <p class="text-gray-600 text-lg">
+                        Explore our complete range of professional workwear for corporate teams, service staff,
+                        restaurants, and hospitals — crafted with premium fabrics, functional designs, and all-day
+                        comfort for every work environment.
+                    </p>
+                </div>
+
+
+
+                <!-- Controls Bar -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg p-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <!-- Results Info -->
+                    <div class="flex items-center gap-2 text-gray-600">
+                        <span class="font-semibold">Showing</span>
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full font-bold">1-30</span>
+                        <span>of</span>
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full font-bold">160</span>
+                        <span>results</span>
+                    </div>
+
+                    <!-- Controls -->
+                    <div class="flex items-center gap-4">
+                        <!-- Sort -->
+                        <div class="flex items-center gap-2">
+                            <span class="text-gray-600 font-medium">Sort:</span>
+                            <select id="sort" name="sort" class="appearance-none px-4 py-2 border-2 border-gray-300 rounded-lg
+         bg-white text-red-600 cursor-pointer
+         focus:outline-none focus:border-red-600">
+                                <option value="popular">Most Popular</option>
+                                <option value="new">Newest</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                            </select>
+
+                        </div>
+
+                        <!-- View Toggle -->
+                        <div class="flex items-center gap-2 bg-gray-100 p-1 rounded-lg">
+                            <button onclick="toggleView('grid')" id="gridBtn"
+                                class="p-2 rounded-lg transition-all duration-300 bg-white shadow-md text-indigo-600">
+                                <i class="fas fa-th"></i>
+                            </button>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Grid View -->
+            <div id="gridView" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
+                <!-- Product Card 1 -->
+                <div
+                    class="product-card group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <!-- Badge -->
+                    <div
+                        class="absolute top-4 left-4 z-10 px-3 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r from-green-500 to-emerald-500 badge-pulse">
+                        <i class="fas fa-percent"></i> -6%
+                    </div>
+
+                    <!-- Image Container -->
+                    <div class="relative overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 aspect-square">
+                        <img src="assets/images/trishul-trades/corporate.jpeg" alt="School Uniform"
+                            class="product-img w-full h-full object-cover">
+
+                        <!-- Overlay Actions -->
+                        <div
+                            class="overlay-actions absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center gap-3 opacity-0">
+                            <button
+                                class="action-btn bg-white p-3 rounded-full shadow-lg hover:bg-indigo-600 hover:text-white">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button
+                                class="action-btn bg-white p-3 rounded-full shadow-lg hover:bg-indigo-600 hover:text-white">
+                                <i class="fas fa-shopping-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="p-5">
+                        <span
+                            class="inline-block px-3 py-1 text-ms font-semibold text-indigo-600 bg-indigo-50 rounded-full mb-2">
+                            Workwear
+                        </span>
+
+                        <h3
+                            class="text-gray-800 font-semibold text-lg mb-2  group-hover:text-indigo-600 transition-colors duration-300 text-white">
+                            Restaurant Staff Uniforms
+
+                        </h3>
+
+                        <div class="flex flex-col gap-2 items-center">
+
+                            <!-- ⭐ Rating (TOP) -->
+                            <div class="inline-flex items-center gap-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                </div>
+                                <span class="text-sm text-white">(4.5)</span>
+                            </div>
+
+                          <!-- Call Now Button with Tooltip -->
+                            <div style="display:flex; justify-content:center;">
+                                <div style="position:relative; display:inline-block;">
+
+                                    <!-- Button -->
+                                    <button
+                                        style="position:relative; overflow:hidden; background: linear-gradient(to right, #ec4899, #f43f5e); color:#fff; font-weight:bold; padding:12px 32px; border-radius:9999px; box-shadow:0 10px 25px rgba(236,72,153,0.25); border:2px solid rgba(255,255,255,0.2); cursor:pointer; transition: all 0.3s ease;"
+                                        onmouseover="this.style.transform='translateY(-2px)'; this.querySelector('.phone-icon').style.animation='shake 0.5s'; this.nextElementSibling.style.opacity='1'; this.nextElementSibling.style.visibility='visible'; this.nextElementSibling.style.animation='tooltipIn 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards';"
+                                        onmouseout="this.style.transform='translateY(0)'; this.querySelector('.phone-icon').style.animation=''; this.nextElementSibling.style.opacity='0'; this.nextElementSibling.style.visibility='hidden';">
+                                        <span class="phone-icon"
+                                            style="display:inline-block; margin-right:8px;">📞</span>
+                                        Call Now
+                                    </button>
+
+                                    <!-- Tooltip -->
+                                    <span
+                                        style="position:absolute; bottom:100%; left:50%; transform:translateX(-50%); margin-bottom:12px; padding:12px 20px; font-size:1rem; font-weight:bold; color:#fff; background: linear-gradient(to bottom right, #ec4899, #f43f5e); border-radius:1rem; opacity:0; visibility:hidden; transition: all 0.4s; white-space:nowrap; border:2px solid rgba(255,255,255,0.3); pointer-events:none; box-shadow:0 10px 20px rgba(0,0,0,0.2);">
+                                        +91 9962552023
+                                        <!-- Arrow -->
+                                        <span
+                                            style="position:absolute; top:100%; left:50%; transform:translateX(-50%); width:0; height:0; border-left:8px solid transparent; border-right:8px solid transparent; border-top:8px solid #e11d48;"></span>
+                                    </span>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div
+                    class="product-card group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 aspect-square">
+                        <img src="assets/images/trishul-trades/corp-2.jpeg" alt="School Uniform"
+                            class="product-img w-full h-full object-cover">
+                        <div
+                            class="overlay-actions absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center gap-3 opacity-0">
+                            <button
+                                class="action-btn bg-white p-3 rounded-full shadow-lg hover:bg-indigo-600 hover:text-white">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button
+                                class="action-btn bg-white p-3 rounded-full shadow-lg hover:bg-indigo-600 hover:text-white">
+                                <i class="fas fa-shopping-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span
+                            class="inline-block px-3 py-1 text-ms font-semibold text-indigo-600 bg-indigo-50 rounded-full mb-2">Workwear</span>
+                        <h3
+                            class="text-gray-800 font-semibold text-lg mb-2  group-hover:text-indigo-600 transition-colors duration-300 text-white">
+                            Hospitality Team Uniforms
+                        </h3>
+                        <div class="flex flex-col gap-2 items-center">
+
+                            <!-- ⭐ Rating (TOP) -->
+                            <div class="inline-flex items-center gap-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                </div>
+                                <span class="text-sm text-white">(4.5)</span>
+                            </div>
+
+                            <!-- Call Now Button with Tooltip -->
+                            <div style="display:flex; justify-content:center;">
+                                <div style="position:relative; display:inline-block;">
+
+                                    <!-- Button -->
+                                    <button
+                                        style="position:relative; overflow:hidden; background: linear-gradient(to right, #ec4899, #f43f5e); color:#fff; font-weight:bold; padding:12px 32px; border-radius:9999px; box-shadow:0 10px 25px rgba(236,72,153,0.25); border:2px solid rgba(255,255,255,0.2); cursor:pointer; transition: all 0.3s ease;"
+                                        onmouseover="this.style.transform='translateY(-2px)'; this.querySelector('.phone-icon').style.animation='shake 0.5s'; this.nextElementSibling.style.opacity='1'; this.nextElementSibling.style.visibility='visible'; this.nextElementSibling.style.animation='tooltipIn 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards';"
+                                        onmouseout="this.style.transform='translateY(0)'; this.querySelector('.phone-icon').style.animation=''; this.nextElementSibling.style.opacity='0'; this.nextElementSibling.style.visibility='hidden';">
+                                        <span class="phone-icon"
+                                            style="display:inline-block; margin-right:8px;">📞</span>
+                                        Call Now
+                                    </button>
+
+                                    <!-- Tooltip -->
+                                    <span
+                                        style="position:absolute; bottom:100%; left:50%; transform:translateX(-50%); margin-bottom:12px; padding:12px 20px; font-size:1rem; font-weight:bold; color:#fff; background: linear-gradient(to bottom right, #ec4899, #f43f5e); border-radius:1rem; opacity:0; visibility:hidden; transition: all 0.4s; white-space:nowrap; border:2px solid rgba(255,255,255,0.3); pointer-events:none; box-shadow:0 10px 20px rgba(0,0,0,0.2);">
+                                        +91 9962552023
+                                        <!-- Arrow -->
+                                        <span
+                                            style="position:absolute; top:100%; left:50%; transform:translateX(-50%); width:0; height:0; border-left:8px solid transparent; border-right:8px solid transparent; border-top:8px solid #e11d48;"></span>
+                                    </span>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div
+                    class="product-card group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 aspect-square">
+                        <img src="assets/images/trishul-trades/corp-3.jpeg" alt="School Uniform"
+                            class="product-img w-full h-full object-cover">
+                        <div
+                            class="overlay-actions absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center gap-3 opacity-0">
+                            <button
+                                class="action-btn bg-white p-3 rounded-full shadow-lg hover:bg-indigo-600 hover:text-white">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button
+                                class="action-btn bg-white p-3 rounded-full shadow-lg hover:bg-indigo-600 hover:text-white">
+                                <i class="fas fa-shopping-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span
+                            class="inline-block px-3 py-1 text-ms font-semibold text-indigo-600 bg-indigo-50 rounded-full mb-2">Workwear</span>
+                        <h3
+                            class="text-gray-800 font-semibold text-lg mb-2  group-hover:text-indigo-600 transition-colors duration-300 text-white">
+                            Service Staff Uniforms
+                        </h3>
+                        <div class="flex flex-col gap-2 items-center">
+
+                            <!-- ⭐ Rating (TOP) -->
+                            <div class="inline-flex items-center gap-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                </div>
+                                <span class="text-sm text-white">(4.5)</span>
+                            </div>
+
+                          <!-- Call Now Button with Tooltip -->
+                            <div style="display:flex; justify-content:center;">
+                                <div style="position:relative; display:inline-block;">
+
+                                    <!-- Button -->
+                                    <button
+                                        style="position:relative; overflow:hidden; background: linear-gradient(to right, #ec4899, #f43f5e); color:#fff; font-weight:bold; padding:12px 32px; border-radius:9999px; box-shadow:0 10px 25px rgba(236,72,153,0.25); border:2px solid rgba(255,255,255,0.2); cursor:pointer; transition: all 0.3s ease;"
+                                        onmouseover="this.style.transform='translateY(-2px)'; this.querySelector('.phone-icon').style.animation='shake 0.5s'; this.nextElementSibling.style.opacity='1'; this.nextElementSibling.style.visibility='visible'; this.nextElementSibling.style.animation='tooltipIn 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards';"
+                                        onmouseout="this.style.transform='translateY(0)'; this.querySelector('.phone-icon').style.animation=''; this.nextElementSibling.style.opacity='0'; this.nextElementSibling.style.visibility='hidden';">
+                                        <span class="phone-icon"
+                                            style="display:inline-block; margin-right:8px;">📞</span>
+                                        Call Now
+                                    </button>
+
+                                    <!-- Tooltip -->
+                                    <span
+                                        style="position:absolute; bottom:100%; left:50%; transform:translateX(-50%); margin-bottom:12px; padding:12px 20px; font-size:1rem; font-weight:bold; color:#fff; background: linear-gradient(to bottom right, #ec4899, #f43f5e); border-radius:1rem; opacity:0; visibility:hidden; transition: all 0.4s; white-space:nowrap; border:2px solid rgba(255,255,255,0.3); pointer-events:none; box-shadow:0 10px 20px rgba(0,0,0,0.2);">
+                                        +91 9962552023
+                                        <!-- Arrow -->
+                                        <span
+                                            style="position:absolute; top:100%; left:50%; transform:translateX(-50%); width:0; height:0; border-left:8px solid transparent; border-right:8px solid transparent; border-top:8px solid #e11d48;"></span>
+                                    </span>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div
+                    class="product-card group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 aspect-square">
+                        <img src="assets/images/trishul-trades/corp-4.jpeg" alt="School Uniform"
+                            class="product-img w-full h-full object-cover">
+                        <div
+                            class="overlay-actions absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center gap-3 opacity-0">
+                            <button
+                                class="action-btn bg-white p-3 rounded-full shadow-lg hover:bg-indigo-600 hover:text-white">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button
+                                class="action-btn bg-white p-3 rounded-full shadow-lg hover:bg-indigo-600 hover:text-white">
+                                <i class="fas fa-shopping-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span
+                            class="inline-block px-3 py-1 text-ms font-semibold text-indigo-600 bg-indigo-50 rounded-full mb-2">Workwear</span>
+                        <h3
+                            class="text-gray-800 font-semibold text-lg mb-2  group-hover:text-indigo-600 transition-colors duration-300 text-white">
+                            Restaurant & Café Staff Wear
+                        </h3>
+                        <div class="flex flex-col gap-2 items-center">
+
+                            <!-- ⭐ Rating (TOP) -->
+                            <div class="inline-flex items-center gap-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                </div>
+                                <span class="text-sm text-white">(4.5)</span>
+                            </div>
+
+                          <!-- Call Now Button with Tooltip -->
+                            <div style="display:flex; justify-content:center;">
+                                <div style="position:relative; display:inline-block;">
+
+                                    <!-- Button -->
+                                    <button
+                                        style="position:relative; overflow:hidden; background: linear-gradient(to right, #ec4899, #f43f5e); color:#fff; font-weight:bold; padding:12px 32px; border-radius:9999px; box-shadow:0 10px 25px rgba(236,72,153,0.25); border:2px solid rgba(255,255,255,0.2); cursor:pointer; transition: all 0.3s ease;"
+                                        onmouseover="this.style.transform='translateY(-2px)'; this.querySelector('.phone-icon').style.animation='shake 0.5s'; this.nextElementSibling.style.opacity='1'; this.nextElementSibling.style.visibility='visible'; this.nextElementSibling.style.animation='tooltipIn 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards';"
+                                        onmouseout="this.style.transform='translateY(0)'; this.querySelector('.phone-icon').style.animation=''; this.nextElementSibling.style.opacity='0'; this.nextElementSibling.style.visibility='hidden';">
+                                        <span class="phone-icon"
+                                            style="display:inline-block; margin-right:8px;">📞</span>
+                                        Call Now
+                                    </button>
+
+                                    <!-- Tooltip -->
+                                    <span
+                                        style="position:absolute; bottom:100%; left:50%; transform:translateX(-50%); margin-bottom:12px; padding:12px 20px; font-size:1rem; font-weight:bold; color:#fff; background: linear-gradient(to bottom right, #ec4899, #f43f5e); border-radius:1rem; opacity:0; visibility:hidden; transition: all 0.4s; white-space:nowrap; border:2px solid rgba(255,255,255,0.3); pointer-events:none; box-shadow:0 10px 20px rgba(0,0,0,0.2);">
+                                        +91 9962552023
+                                        <!-- Arrow -->
+                                        <span
+                                            style="position:absolute; top:100%; left:50%; transform:translateX(-50%); width:0; height:0; border-left:8px solid transparent; border-right:8px solid transparent; border-top:8px solid #e11d48;"></span>
+                                    </span>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div
+                    class="product-card group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <div
+                        class="absolute top-4 left-4 z-10 px-3 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r from-red-500 to-orange-500 badge-pulse">
+                        <i class="fas fa-fire"></i> HOT
+                    </div>
+                    <div class="relative overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 aspect-square">
+                        <img src="assets/images/trishul-trades/corp-5.jpg" alt="School Uniform"
+                            class="product-img w-full h-full object-cover">
+                        <div
+                            class="overlay-actions absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center gap-3 opacity-0">
+                            <button
+                                class="action-btn bg-white p-3 rounded-full shadow-lg hover:bg-indigo-600 hover:text-white">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button
+                                class="action-btn bg-white p-3 rounded-full shadow-lg hover:bg-indigo-600 hover:text-white">
+                                <i class="fas fa-shopping-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span
+                            class="inline-block px-3 py-1 text-ms font-semibold text-indigo-600 bg-indigo-50 rounded-full mb-2">Workwear</span>
+                        <h3
+                            class="text-gray-800 font-semibold text-lg mb-2  group-hover:text-indigo-600 transition-colors duration-300 text-white">
+                           Smart & Professional Office Wear
+                        </h3>
+                        <div class="flex flex-col gap-2 items-center">
+
+                            <!-- ⭐ Rating (TOP) -->
+                            <div class="inline-flex items-center gap-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                </div>
+                                <span class="text-sm text-white">(4.5)</span>
+                            </div>
+
+                          <!-- Call Now Button with Tooltip -->
+                            <div style="display:flex; justify-content:center;">
+                                <div style="position:relative; display:inline-block;">
+
+                                    <!-- Button -->
+                                    <button
+                                        style="position:relative; overflow:hidden; background: linear-gradient(to right, #ec4899, #f43f5e); color:#fff; font-weight:bold; padding:12px 32px; border-radius:9999px; box-shadow:0 10px 25px rgba(236,72,153,0.25); border:2px solid rgba(255,255,255,0.2); cursor:pointer; transition: all 0.3s ease;"
+                                        onmouseover="this.style.transform='translateY(-2px)'; this.querySelector('.phone-icon').style.animation='shake 0.5s'; this.nextElementSibling.style.opacity='1'; this.nextElementSibling.style.visibility='visible'; this.nextElementSibling.style.animation='tooltipIn 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards';"
+                                        onmouseout="this.style.transform='translateY(0)'; this.querySelector('.phone-icon').style.animation=''; this.nextElementSibling.style.opacity='0'; this.nextElementSibling.style.visibility='hidden';">
+                                        <span class="phone-icon"
+                                            style="display:inline-block; margin-right:8px;">📞</span>
+                                        Call Now
+                                    </button>
+
+                                    <!-- Tooltip -->
+                                    <span
+                                        style="position:absolute; bottom:100%; left:50%; transform:translateX(-50%); margin-bottom:12px; padding:12px 20px; font-size:1rem; font-weight:bold; color:#fff; background: linear-gradient(to bottom right, #ec4899, #f43f5e); border-radius:1rem; opacity:0; visibility:hidden; transition: all 0.4s; white-space:nowrap; border:2px solid rgba(255,255,255,0.3); pointer-events:none; box-shadow:0 10px 20px rgba(0,0,0,0.2);">
+                                        +91 9962552023
+                                        <!-- Arrow -->
+                                        <span
+                                            style="position:absolute; top:100%; left:50%; transform:translateX(-50%); width:0; height:0; border-left:8px solid transparent; border-right:8px solid transparent; border-top:8px solid #e11d48;"></span>
+                                    </span>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div
+                    class="product-card group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 aspect-square">
+                        <img src="assets/images/trishul-trades/corp6.webp" alt="School Uniform"
+                            class="product-img w-full h-full object-cover">
+                        <div
+                            class="overlay-actions absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center gap-3 opacity-0">
+                            <button
+                                class="action-btn bg-white p-3 rounded-full shadow-lg hover:bg-indigo-600 hover:text-white">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button
+                                class="action-btn bg-white p-3 rounded-full shadow-lg hover:bg-indigo-600 hover:text-white">
+                                <i class="fas fa-shopping-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span
+                            class="inline-block px-3 py-1 text-ms font-semibold text-indigo-600 bg-indigo-50 rounded-full mb-2">Workwear</span>
+                        <h3
+                            class="text-gray-800 font-semibold text-lg mb-2  group-hover:text-indigo-600 transition-colors duration-300 text-white">
+                            Durable & Comfortable Daily Workwear
+                        </h3>
+                        <div class="flex flex-col gap-2 items-center">
+
+                            <!-- ⭐ Rating (TOP) -->
+                            <div class="inline-flex items-center gap-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                </div>
+                                <span class="text-sm text-white">(4.5)</span>
+                            </div>
+
+                           <!-- Call Now Button with Tooltip -->
+                            <div style="display:flex; justify-content:center;">
+                                <div style="position:relative; display:inline-block;">
+
+                                    <!-- Button -->
+                                    <button
+                                        style="position:relative; overflow:hidden; background: linear-gradient(to right, #ec4899, #f43f5e); color:#fff; font-weight:bold; padding:12px 32px; border-radius:9999px; box-shadow:0 10px 25px rgba(236,72,153,0.25); border:2px solid rgba(255,255,255,0.2); cursor:pointer; transition: all 0.3s ease;"
+                                        onmouseover="this.style.transform='translateY(-2px)'; this.querySelector('.phone-icon').style.animation='shake 0.5s'; this.nextElementSibling.style.opacity='1'; this.nextElementSibling.style.visibility='visible'; this.nextElementSibling.style.animation='tooltipIn 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards';"
+                                        onmouseout="this.style.transform='translateY(0)'; this.querySelector('.phone-icon').style.animation=''; this.nextElementSibling.style.opacity='0'; this.nextElementSibling.style.visibility='hidden';">
+                                        <span class="phone-icon"
+                                            style="display:inline-block; margin-right:8px;">📞</span>
+                                        Call Now
+                                    </button>
+
+                                    <!-- Tooltip -->
+                                    <span
+                                        style="position:absolute; bottom:100%; left:50%; transform:translateX(-50%); margin-bottom:12px; padding:12px 20px; font-size:1rem; font-weight:bold; color:#fff; background: linear-gradient(to bottom right, #ec4899, #f43f5e); border-radius:1rem; opacity:0; visibility:hidden; transition: all 0.4s; white-space:nowrap; border:2px solid rgba(255,255,255,0.3); pointer-events:none; box-shadow:0 10px 20px rgba(0,0,0,0.2);">
+                                        +91 9962552023
+                                        <!-- Arrow -->
+                                        <span
+                                            style="position:absolute; top:100%; left:50%; transform:translateX(-50%); width:0; height:0; border-left:8px solid transparent; border-right:8px solid transparent; border-top:8px solid #e11d48;"></span>
+                                    </span>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 7 -->
+                <div
+                    class="product-card group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 aspect-square">
+                        <img src="assets/images/trishul-trades/corp-7.webp" alt="School Uniform"
+                            class="product-img w-full h-full object-cover">
+                        <div
+                            class="overlay-actions absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center gap-3 opacity-0">
+                            <button
+                                class="action-btn bg-white p-3 rounded-full shadow-lg hover:bg-indigo-600 hover:text-white">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button
+                                class="action-btn bg-white p-3 rounded-full shadow-lg hover:bg-indigo-600 hover:text-white">
+                                <i class="fas fa-shopping-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span
+                            class="inline-block px-3 py-1 text-ms font-semibold text-indigo-600 bg-indigo-50 rounded-full mb-2">Workwear</span>
+                        <h3
+                            class="text-gray-800 font-semibold text-lg mb-2  group-hover:text-indigo-600 transition-colors duration-300 text-white">
+                            Elegant Fit for Restaurants & Clinics
+                        </h3>
+                        <div class="flex flex-col gap-2 items-center">
+
+                            <!-- ⭐ Rating (TOP) -->
+                            <div class="inline-flex items-center gap-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                </div>
+                                <span class="text-sm text-white">(4.5)</span>
+                            </div>
+
+                          <!-- Call Now Button with Tooltip -->
+                            <div style="display:flex; justify-content:center;">
+                                <div style="position:relative; display:inline-block;">
+
+                                    <!-- Button -->
+                                    <button
+                                        style="position:relative; overflow:hidden; background: linear-gradient(to right, #ec4899, #f43f5e); color:#fff; font-weight:bold; padding:12px 32px; border-radius:9999px; box-shadow:0 10px 25px rgba(236,72,153,0.25); border:2px solid rgba(255,255,255,0.2); cursor:pointer; transition: all 0.3s ease;"
+                                        onmouseover="this.style.transform='translateY(-2px)'; this.querySelector('.phone-icon').style.animation='shake 0.5s'; this.nextElementSibling.style.opacity='1'; this.nextElementSibling.style.visibility='visible'; this.nextElementSibling.style.animation='tooltipIn 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards';"
+                                        onmouseout="this.style.transform='translateY(0)'; this.querySelector('.phone-icon').style.animation=''; this.nextElementSibling.style.opacity='0'; this.nextElementSibling.style.visibility='hidden';">
+                                        <span class="phone-icon"
+                                            style="display:inline-block; margin-right:8px;">📞</span>
+                                        Call Now
+                                    </button>
+
+                                    <!-- Tooltip -->
+                                    <span
+                                        style="position:absolute; bottom:100%; left:50%; transform:translateX(-50%); margin-bottom:12px; padding:12px 20px; font-size:1rem; font-weight:bold; color:#fff; background: linear-gradient(to bottom right, #ec4899, #f43f5e); border-radius:1rem; opacity:0; visibility:hidden; transition: all 0.4s; white-space:nowrap; border:2px solid rgba(255,255,255,0.3); pointer-events:none; box-shadow:0 10px 20px rgba(0,0,0,0.2);">
+                                        +91 9962552023
+                                        <!-- Arrow -->
+                                        <span
+                                            style="position:absolute; top:100%; left:50%; transform:translateX(-50%); width:0; height:0; border-left:8px solid transparent; border-right:8px solid transparent; border-top:8px solid #e11d48;"></span>
+                                    </span>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 8 -->
+                <div
+                    class="product-card group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                    <div
+                        class="absolute top-4 left-4 z-10 px-3 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r from-green-500 to-emerald-500 badge-pulse">
+                        <i class="fas fa-percent"></i> -6%
+                    </div>
+                    <div class="relative overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50 aspect-square">
+                        <img src="assets/images/trishul-trades/corp-8.webp" alt="School Uniform"
+                            class="product-img w-full h-full object-cover">
+                        <div
+                            class="overlay-actions absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center gap-3 opacity-0">
+                            <button
+                                class="action-btn bg-white p-3 rounded-full shadow-lg hover:bg-indigo-600 hover:text-white">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                            <button
+                                class="action-btn bg-white p-3 rounded-full shadow-lg hover:bg-indigo-600 hover:text-white">
+                                <i class="fas fa-shopping-bag"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <span
+                            class="inline-block px-3 py-1 text-ms font-semibold text-indigo-600 bg-indigo-50 rounded-full mb-2">Workwear</span>
+                        <h3
+                            class="text-gray-800 font-semibold text-lg mb-2  group-hover:text-indigo-600 transition-colors duration-300 text-white">
+                            Strong Fabric for Active Duty
+                        </h3>
+                        <div class="flex flex-col gap-2 items-center">
+
+                            <!-- ⭐ Rating (TOP) -->
+                            <div class="inline-flex items-center gap-2">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                    <i class="fas fa-star text-sm"></i>
+                                </div>
+                                <span class="text-sm text-white">(4.5)</span>
+                            </div>
+
+                            <!-- Call Now Button with Tooltip -->
+                            <div style="display:flex; justify-content:center;">
+                                <div style="position:relative; display:inline-block;">
+
+                                    <!-- Button -->
+                                    <button
+                                        style="position:relative; overflow:hidden; background: linear-gradient(to right, #ec4899, #f43f5e); color:#fff; font-weight:bold; padding:12px 32px; border-radius:9999px; box-shadow:0 10px 25px rgba(236,72,153,0.25); border:2px solid rgba(255,255,255,0.2); cursor:pointer; transition: all 0.3s ease;"
+                                        onmouseover="this.style.transform='translateY(-2px)'; this.querySelector('.phone-icon').style.animation='shake 0.5s'; this.nextElementSibling.style.opacity='1'; this.nextElementSibling.style.visibility='visible'; this.nextElementSibling.style.animation='tooltipIn 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards';"
+                                        onmouseout="this.style.transform='translateY(0)'; this.querySelector('.phone-icon').style.animation=''; this.nextElementSibling.style.opacity='0'; this.nextElementSibling.style.visibility='hidden';">
+                                        <span class="phone-icon"
+                                            style="display:inline-block; margin-right:8px;">📞</span>
+                                        Call Now
+                                    </button>
+
+                                    <!-- Tooltip -->
+                                    <span
+                                        style="position:absolute; bottom:100%; left:50%; transform:translateX(-50%); margin-bottom:12px; padding:12px 20px; font-size:1rem; font-weight:bold; color:#fff; background: linear-gradient(to bottom right, #ec4899, #f43f5e); border-radius:1rem; opacity:0; visibility:hidden; transition: all 0.4s; white-space:nowrap; border:2px solid rgba(255,255,255,0.3); pointer-events:none; box-shadow:0 10px 20px rgba(0,0,0,0.2);">
+                                        +91 9962552023
+                                        <!-- Arrow -->
+                                        <span
+                                            style="position:absolute; top:100%; left:50%; transform:translateX(-50%); width:0; height:0; border-left:8px solid transparent; border-right:8px solid transparent; border-top:8px solid #e11d48;"></span>
+                                    </span>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+
+
+
+            <!-- Pagination -->
+            <div class="flex justify-center items-center gap-2">
+                <button
+                    class="p-3 bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 hover:bg-indigo-600 hover:text-white">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button
+                    class="px-4 py-2 rounded-lg font-semibold bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg">1</button>
+                <button
+                    class="px-4 py-2 rounded-lg font-semibold bg-white text-gray-600 hover:bg-gray-100 shadow">2</button>
+                <button
+                    class="px-4 py-2 rounded-lg font-semibold bg-white text-gray-600 hover:bg-gray-100 shadow">3</button>
+                <button
+                    class="px-4 py-2 rounded-lg font-semibold bg-white text-gray-600 hover:bg-gray-100 shadow">4</button>
+                <button
+                    class="px-4 py-2 rounded-lg font-semibold bg-white text-gray-600 hover:bg-gray-100 shadow">5</button>
+                <button
+                    class="p-3 bg-white rounded-lg shadow hover:shadow-lg transition-all duration-300 hover:bg-indigo-600 hover:text-white">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <!-- shop-page-section end -->
+
+
+
+
+
+
+        <!-- main-footer -->
+        <footer class="main-footer">
+            <div class="pattern-layer" style="background-image: url(assets/images/shape/shape-1.png);"></div>
+            <div class="anim-shape">
+                <div class="shape-1 rotate-me" style="background-image: url(assets/images/shape/shape-5.png);"></div>
+                <div class="shape-2 rotate-me" style="background-image: url(assets/images/shape/shape-5.png);"></div>
+                <div class="shape-3 rotate-me" style="background-image: url(assets/images/shape/shape-5.png);"></div>
+                <div class="shape-4 rotate-me" style="background-image: url(assets/images/shape/shape-5.png);"></div>
+                <div class="shape-5 float-bob-y" style="background-image: url(assets/images/shape/shape-34.png);"></div>
+                <div class="shape-6 float-bob-x" style="background-image: url(assets/images/shape/shape-35.png);"></div>
+                <div class="shape-7 float-bob-y" style="background-image: url(assets/images/shape/shape-36.png);"></div>
+            </div>
+            <div class="widget-section p_relative pt_100 pb_80">
+
+
+                <div class="large-container">
+                    <div class="row clearfix" style="margin: 0;">
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="tp-footer-widget logo-widget">
+                                <figure class="footer-logo"><a href="index.html"><img
+                                            src="assets/images/trishul logo.png" alt=""></a></figure>
+                                <ul class="info-list clearfix">
+                                    <li>No.57b, Groundfloor,Balaji Nagar, GerugamBakkam Chennai, India</li>
+                                    <li><a href="mailto:trishultrades@gmail.com">trishultrades@gmail.com</a></li>
+                                </ul>
+                                <ul class="social-links">
+                                    <li><a href="https://www.facebook.com/share/1AozFQgc3u/"><i
+                                                class="fab fa-facebook"></i></a></li>
+                                    <li><a href="https://wa.me/919962552023"><i class="fab fa-whatsapp"></i></a></li>
+                                    <li><a href="index.html"><i class="fab fa-google"></i></a></li>
+                                    <li><a href="https://www.instagram.com/tt.trishul/"><i
+                                                class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                            <div class="tp-footer-widget links-widget">
+                                <div class="widget-title">
+                                    <h4>Resources</h4>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="links-list clearfix">
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="bags.html">Bags</a></li>
+                                        <li><a href="dtf-print.html">DTF Printing</a></li>
+                                        <li><a href="blogs.html">Blogs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                            <div class="tp-footer-widget links-widget">
+                                <div class="widget-title">
+                                    <h4>Support</h4>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="links-list clearfix">
+                                        <li><a href="uv-printing.html">UV Printing</a></li>
+                                        <li><a href="combo-pack.html">Combo Pack</a></li>
+                                        <li><a href="uniform-set.html">Uniform Set</a></li>
+                                        <li><a href="id_ card-print.html">ID Card Printing</a></li>
+                                        <li><a href="blogs.html">Blogs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                            <div class="tp-footer-widget links-widget">
+                                <div class="widget-title">
+                                    <h4>Store Info</h4>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="links-list clearfix">
+                                        <li><a href="index.html">Best Seller</a></li>
+                                        <li><a href="index.html">Top Sold Items</a></li>
+                                        <li><a href="index.html">New Arrivals</a></li>
+                                        <li><a href="index.html">Flash Sale</a></li>
+                                        <li><a href="index.html">Discount Products</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="tp-footer-widget subscribe-widget">
+                                <h5 style="color: #fff; margin-bottom: 15px; font-size: 20px;">Follow Us on Instagram
+                                </h5>
+
+
+
+                                <div style="margin-top: 20px; text-align: right;">
+                                    <img src="assets/images/trishul-trades/instagran.jpeg" alt="Instagram QR"
+                                        style="height: 250px; width: 230px; border-radius: 8px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="large-container">
+            <div class="bottom-inner">
+                <div class="copyright">
+                    <p>Copyright &copy; 2026 <a href="index.html">Trishul-Trades</a>, Inc. All Rights Reserved
+                    </p>
+                </div>
+                <ul class="footer-card">
+                    <li><a href="index.html"><img src="assets/images/icons/card-1.png" alt=""></a></li>
+                    <li><a href="index.html"><img src="assets/images/icons/card-2.png" alt=""></a></li>
+                    <li><a href="index.html"><img src="assets/images/icons/card-3.png" alt=""></a></li>
+                    <li><a href="index.html"><img src="assets/images/icons/card-4.png" alt=""></a></li>
+                    <li><a href="index.html"><img src="assets/images/icons/card-5.png" alt=""></a></li>
+                    <li><a href="index.html"><img src="assets/images/icons/card-6.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </footer>
+    <!-- main-footer end -->
+
+
+
+
+    <!--Scroll to top-->
+    <div class="scroll-to-top">
+        <svg class="scroll-top-inner" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+
+    </div>
+
+
+    <!-- jequery plugins -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/validation.js"></script>
+    <script src="assets/js/jquery.fancybox.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/parallax-scroll.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/scrolltop.min.js"></script>
+    <script src="assets/js/language.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/jquery.bootstrap-touchspin.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/product-filter.js"></script>
+
+    <!-- main-js -->
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        // Count selected items and update badge
+        const checkboxes = document.querySelectorAll('.checkbox-input');
+        const selectedCountBadge = document.getElementById('selectedCount');
+        const filterContainer = document.getElementById('filterContainer');
+
+        function updateSelectedCount() {
+            const count = Array.from(checkboxes).filter(cb => cb.checked).length;
+            selectedCountBadge.textContent = count;
+
+            if (count > 0) {
+                filterContainer.classList.add('has-selection');
+            } else {
+                filterContainer.classList.remove('has-selection');
+            }
+        }
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateSelectedCount);
+        });
+    </script>
+
+    <script src="assets/js/navbar.js"></script>
+
+    <script>
+        function toggleView(view) {
+            const gridView = document.getElementById('gridView');
+            const listView = document.getElementById('listView');
+            const gridBtn = document.getElementById('gridBtn');
+            const listBtn = document.getElementById('listBtn');
+
+            if (view === 'grid') {
+                gridView.classList.remove('hidden');
+                listView.classList.add('hidden');
+                gridBtn.classList.add('bg-white', 'shadow-md', 'text-indigo-600');
+                gridBtn.classList.remove('text-gray-400');
+                listBtn.classList.remove('bg-white', 'shadow-md', 'text-indigo-600');
+                listBtn.classList.add('text-gray-400');
+            } else {
+                gridView.classList.add('hidden');
+                listView.classList.remove('hidden');
+                listBtn.classList.add('bg-white', 'shadow-md', 'text-indigo-600');
+                listBtn.classList.remove('text-gray-400');
+                gridBtn.classList.remove('bg-white', 'shadow-md', 'text-indigo-600');
+                gridBtn.classList.add('text-gray-400');
+            }
+        }
+    </script>
+
+</body><!-- End of .page_wrapper -->
+
+</html>
