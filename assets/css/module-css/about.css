@@ -28,7 +28,7 @@
 .about-section .image-box .image-2{
   position: absolute;
   right: 0px;
-  bottom: 0px;
+  bottom: -110px;
   border-radius: 250px 250px 10px 250px;
 }
 
