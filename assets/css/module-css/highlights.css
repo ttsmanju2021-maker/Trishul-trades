@@ -45,6 +45,8 @@
   border-radius: 50%;
   border: dashed;
   border-width: 1px;
+  padding-top: 7px;
+  padding-left: 12px;
 }
 
 .highlights-section .list-item .single-item:hover .icon-box img,
